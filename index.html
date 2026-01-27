@@ -13,28 +13,40 @@
   <nav>
     <div class="logo">RL-Diffusion</div>
     <div class="nav-links">
-      <a href="#about">About</a>
+      <a href="icml2026__1_">Paper</a>
       <a href="#method">Method</a>
       <a href="#results">Results</a>
-      <a href="#paper">Paper</a>
     </div>
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Reinforcement Learning Guided Diffusion</h1>
-  <p>Optimizing generative models with reward feedback</p>
+<section class="hero center-text">
+  <h1>Inference-Time Reward Alignment of Diffusion Models via Geometric Particle
+Expansion</h1>
+  <p>A new sequential monte carlo sampling method based
+on geometric expansion</p>
 </section>
 
-<section id="about" class="section">
-  <h2>About</h2>
+<section class="hero center-text">
+  <h1>Summary</h1>
+  <p>A new sequential monte carlo sampling method based
+on geometric expansion. We extend SMC with a same-
+step geometric expansion mechanism to incorporate
+reward maximization while remaining close to the tar-
+get distribution</p>
+</section>
+  
+
+<section id="illustration" class="section center-text">
+  <h2>illustrationt</h2>
+  <img src="particle-expansion.jpg" alt="Illustration of particle expansion in the SMC">
+
   <p>
-    This project explores reward-directed diffusion models for
-    non-differentiable optimization problems.
+    Illustration of particle expansion in the SM
   </p>
 </section>
 
-<section id="method" class="section gray">
+<section id="method" class="section gray center-text">
   <h2>Method</h2>
   <p>
     We combine reinforcement learning with diffusion sampling to guide
@@ -42,17 +54,17 @@
   </p>
 </section>
 
-<section id="results" class="section">
+<section id="results" class="section center-text">
   <h2>Results</h2>
   <div class="grid">
     <div class="card">
-      <img src="assets/demo.png" alt="result">
-      <p>Optimized samples</p>
+      <img src="particle expansion.jpg" alt="Illustration of particle expansion in the SMC">
+      <p>Illustration of particle expansion in the SMC</p>
     </div>
   </div>
 </section>
 
-<section id="paper" class="section gray">
+<section id="paper" class="section gray center-text">
   <h2>Paper</h2>
   <a class="button" href="#">Read the Paper</a>
 </section>

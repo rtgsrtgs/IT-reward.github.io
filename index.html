@@ -68,8 +68,23 @@ from a proposal distribution, with associated unnormalized importance weights to
   <p> We evaluate our SMC-guided graph diffusion approach on the task of generating drug-like molecules with high Quantitative Estimate of Drug-likeness (QED).</p>
   <div class="grid center-text">
     <div class="card">
-      <img src="swisrole.png" alt="Swiss-roll distribution">
+      <img src="QED95.png" alt="Swiss-roll distribution">
       <p>Illustration of particle expansion in the SMC</p>
+    </div>
+  </div>
+</section>
+
+
+ <section id="compressibility reward" class="section">
+  <h2 class="center-text"> compressibility reward </h2>
+  <p> JPEG compressibility constitutes a non-differentiable reward, which we optimize using 4096 function evaluations (NFE).
+This figure presents a qualitative comparison of the generated animals against DDPO and DAS. GPE effectively suppresses background artifacts and promotes spatial smoothness, resulting in improved compressibility.
+.</p>
+  <div class="grid center-text">
+    <div class="card">
+      <img src="Horse43.png" alt="compressibility reward">
+      <img src="cheetah63point4compress.png" alt="compressibility reward cheetA">
+      <p>Examples of images with low KB and high quality</p>
     </div>
   </div>
 </section>

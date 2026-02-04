@@ -29,7 +29,7 @@ on geometric expansion</p>
 
 <section class="section">
   <h1 class="center-text">Summary</h1>
-  <p>paper presents a derivative-free alignment approach for diffusion model inference to provide post-training optimization for non-differentiable rewards. We propose a geometric expansion in Sequential Monte Carlo–based sampling that does not require  reward  differentiation  at  any  stage of inference. Our approach generates additional particles via geometric noise based on the covariance of elite particles along dominant eigenvalue directions, followed by resampling at the same timestep to prevent weight degeneracy. </p>
+  <p>We present a derivative-free alignment approach for diffusion model inference to provide post-training optimization for non-differentiable rewards. We propose a geometric expansion in Sequential Monte Carlo–based sampling that does not require  reward  differentiation  at  any  stage of inference. Our approach generates additional particles via geometric noise based on the covariance of elite particles along dominant eigenvalue directions, followed by resampling at the same timestep to prevent weight degeneracy. </p>
   <p>our main contributions are as follows:<p>
 <p>1. We propose Geometric Particle Expansion, a same-timestep, geometry-aware augmentation of SMC-guided diffusion sampling for derivative-free inference-time reward alignment.</p>
 <p>2. We provide a theoretical proof that the geometric particle expansion is asymptotically negligible in the re-sampling distribution.</p>
@@ -49,10 +49,33 @@ from a proposal distribution, with associated unnormalized importance weights to
       <p>Illustration of particle expansion in the SMC</p>
     </div>
   </div>
-
- 
 </section>
 
+<section id="swiss roll" class="section">
+  <h2 class="center-text">Swiss-roll </h2>
+  <p> We begin with toy experiments on the Swiss-roll distribution to demonstrate that reward optimization does not induce excessive drift from the target distribution.</p>
+  <p>We then study both non-differentiable and differentiable rewards for image generation, providing quantitative and qualitative comparisons with existing methods.</p>
+  <div class="grid center-text">
+    <div class="card">
+      <img src="swisrole.png" alt="Swiss-roll distribution">
+      <p>Illustration of particle expansion in the SMC</p>
+    </div>
+  </div>
+</section>
+
+  <section id="swiss roll" class="section">
+  <h2 class="center-text"> SMC-guided graph diffusion approach on the task of generating drug-like molecules </h2>
+  <p> We evaluate our SMC-guided graph diffusion approach on the task of generating drug-like molecules with high Quantitative Estimate of Drug-likeness (QED).</p>
+  <div class="grid center-text">
+    <div class="card">
+      <img src="swisrole.png" alt="Swiss-roll distribution">
+      <p>Illustration of particle expansion in the SMC</p>
+    </div>
+  </div>
+</section>
+
+
+  
 <section id="method" class="section gray center-text">
   <h2>Method</h2>
   <p>
@@ -61,15 +84,7 @@ from a proposal distribution, with associated unnormalized importance weights to
   </p>
 </section>
 
-<section id="results" class="section center-text">
-  <h2>Results</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="Picture1.png" alt="Illustration of particle expansion in the SMC">
-      <p>Illustration of particle expansion in the SMC</p>
-    </div>
-  </div>
-</section>
+
 
 <section id="paper" class="section gray center-text">
   <h2>Paper</h2>

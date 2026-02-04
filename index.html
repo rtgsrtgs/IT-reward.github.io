@@ -27,14 +27,13 @@ Expansion</h1>
 on geometric expansion</p>
 </section>
 
-<section class="hero">
+<section class="section">
   <h1 class="center-text">Summary</h1>
   <p>paper presents a derivative-free alignment approach for diffusion model inference to provide post-training optimization for non-differentiable rewards. We propose a geometric expansion in Sequential Monte Carlo–based sampling that does not require  reward  differentiation  at  any  stage of inference. Our approach generates additional particles via geometric noise based on the covariance of elite particles along dominant eigenvalue directions, followed by resampling at the same timestep to prevent weight degeneracy. </p>
-  <p>our main contributions are as follows:
-1. We propose Geometric Particle Expansion, a same-timestep, geometry-aware augmentation of SMC-guided diffusion sampling for derivative-free inference-time reward alignment.
-2. We provide a theoretical proof that the geometric particle expansion is asymptotically negligible in the re-sampling distribution.
-3. We empirically validate the performance of GPE in arrange of non-differentiable tasks, including image and molecular generation, and also evaluate its behavior under differentiable rewards.
-</p>
+  <p>our main contributions are as follows:<p>
+<p>1. We propose Geometric Particle Expansion, a same-timestep, geometry-aware augmentation of SMC-guided diffusion sampling for derivative-free inference-time reward alignment.</p>
+<p>2. We provide a theoretical proof that the geometric particle expansion is asymptotically negligible in the re-sampling distribution.</p>
+<p>3. We empirically validate the performance of GPE in arrange of non-differentiable tasks, including image and molecular generation, and also evaluate its behavior under differentiable rewards.</p>
 </section>
   
 
@@ -44,7 +43,7 @@ on geometric expansion</p>
 weighted by importance sampling within SMC. At each step, the SMC generates samples 
 from a proposal distribution, with associated unnormalized importance weights to control weight degeneracy, SMC applies resampling with replacement, producing an equally weighted empirical measure supported on Dirac masses.
 </p>
-  <div class="grid">
+  <div class="grid center-text">
     <div class="card">
       <img src="Picture1.png" alt="Illustration of particle expansion in the SMC">
       <p>Illustration of particle expansion in the SMC</p>

@@ -76,9 +76,10 @@ body {
 }
 
 .image-row img {
-  width: 200px;             /* makes them small + 2 in a row */
+  width: 40%;             /* makes them small + 2 in a row */
   height: auto;           /* keeps aspect ratio */
 }
+
 
 
 

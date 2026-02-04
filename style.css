@@ -70,3 +70,14 @@ body {
   text-align: center;
 }
 
+.image-row {
+  display: flex;
+  gap: 20px;              /* space between pictures */
+}
+
+.image-row img {
+  width: 48%;             /* makes them small + 2 in a row */
+  height: auto;           /* keeps aspect ratio */
+}
+
+
